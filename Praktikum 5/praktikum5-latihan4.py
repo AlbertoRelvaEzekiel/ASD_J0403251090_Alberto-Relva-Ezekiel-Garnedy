@@ -1,0 +1,16 @@
+# ==========================================================
+# PRAKTIKUM 5
+# Nama  : Alberto Relva Ezekiel Garnedy
+# NIM   : J0403251090
+# Kelas : A1
+# ==========================================================
+
+# Latihan 4 - Kombinasi Huruf
+def kombinasi(n, hasil=""):
+    if len(hasil) == n:
+        print(hasil)
+        return
+    kombinasi(n, hasil + "A")
+    kombinasi(n, hasil + "B")
+
+kombinasi(2)
